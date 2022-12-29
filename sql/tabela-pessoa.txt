@@ -1,0 +1,23 @@
+
+Tabela (Pessoa) 
+
+CREATE TABLE pessoa_avilla (
+		pessoa_id INT NOT NULL AUTO_INCREMENT,
+		nome VARCHAR(200),
+		cpf VARCHAR(25),
+		idade Date,
+		sexo Char(1),
+		PRIMARY KEY(pessoa_id)
+	);
+
+Consulta para trazer as informações:
+select *from pessoa_avilla;
+
+
+
+
+
+
+
+
+

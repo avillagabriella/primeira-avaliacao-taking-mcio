@@ -1,0 +1,18 @@
+Juntando as tabelas conforme esta pedindo os campos na avaliação:
+
+select
+	pessoa_avilla.pessoa_id,
+	pessoa_avilla.nome,
+	pessoa_avilla.cpf,
+	pessoa_avilla.idade,
+	pessoa_avilla.sexo,
+	endereco_avilla.tipo,
+	endereco_avilla.logradouro,
+	endereco_avilla.numero,
+	endereco_avilla.complemento,
+	endereco_avilla.cep,
+	endereco_avilla.cidade,
+	endereco_avilla.estado 
+from
+	pessoa_avilla
+	inner join endereco_avilla on pessoa_avilla.pessoa_id = endereco_avilla.pessoa_id;
